@@ -1,25 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>The DOM</title>
+    <link rel="stylesheet" href="../../base.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>The DOM</title>
-  <link rel="stylesheet" href="../../base.css">
-</head>
+  <body>
+    <img class="nice cool" src="https://source.unsplash.com/random/600x600" />
 
-<body>
-  <div class="items">
-    <p>Hi I'm a item</p>
-    <div>
-      <h2>Sub Div</h2>
-      <p>Hi I'm a item</p>
+    <div class="items">
+      <div class="item">
+        <img
+          class="custom"
+          data-name="ryan"
+          data-last="apples"
+          src="https://source.unsplash.com/random/300x300"
+        />
+        <img
+          data-name="kiki"
+          src="https://source.unsplash.com/random/300x300"
+        />
+        <img
+          data-name="kanao"
+          src="https://source.unsplash.com/random/300x300"
+        />
+        <p>Hi I'm a item</p>
+      </div>
 
+      <div class="item item2">
+        <img src="https://source.unsplash.com/random/300x300" />
+        <h2>
+          Heading
+          <span>Hidden span!</span>
+        </h2>
+        <p>Hi I'm a item</p>
+      </div>
+
+      <article class="item">
+        <h2>Article</h2>
+        <p class="pizza">This is how many pizzas I ate! 🍕</p>
+      </article>
     </div>
-    <img src="https://source.unsplash.com/random/300x300" />
-    <p>Hi I'm a item</p>
-    <p>Hi I'm a item</p>
-  </div>
-</body>
 
+    <style>
+      h2 span {
+        display: none;
+      }
+
+      img {
+        transition: all 0.2s ease-in-out;
+      }
+
+      .round {
+        border-radius: 50%;
+        transform: rotate(1turn) scale(2);
+        box-shadow: 0 0 10px black;
+      }
+    </style>
+    <script src="./creating-with-strings.js"></script>
+  </body>
 </html>
